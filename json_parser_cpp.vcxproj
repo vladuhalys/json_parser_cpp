@@ -154,7 +154,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="json_parser_cpp.cpp" />
+    <ClCompile Include="example.cpp" />
+    <ClCompile Include="models\book\Book.cpp" />
+    <ClCompile Include="services\json_mapper\json_mapper.cpp" />
+    <ClCompile Include="services\json_reader\json_reader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\json_object.h" />
+    <ClInclude Include="core\json_parser.h" />
+    <ClInclude Include="models\book\Book.h" />
+    <ClInclude Include="models\example\Example.h" />
+    <ClInclude Include="repositories\example_repository.h" />
+    <ClInclude Include="services\json_mapper\json_mapper.h" />
+    <ClInclude Include="services\json_reader\json_reader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\json\example.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
